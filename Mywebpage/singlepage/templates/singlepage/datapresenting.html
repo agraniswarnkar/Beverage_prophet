@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Data Diagrams</title>
+</head>
+<body>
+    <h1>Financial Data Diagrams</h1>
+    <div>
+        <h2>Microsoft (MSFT) Stock Price</h2>
+        <img src="../../static/images/msft_stock_graph.png" alt="MSFT Stock Price">
+    </div>
+    <div>
+        <h2>Apple (AAPL) Stock Price</h2>
+        <img src="{% static 'images/aapl_stock_graph.png' %}" alt="AAPL Stock Price">
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Page</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <!-- AAPL Chart Container -->
+    <div id="aapl-chart-container" style="width: 50%; float: left;"></div>
+
+    <!-- META Chart Container -->
+    <div id="meta-chart-container" style="width: 50%; float: left;"></div>
+
+    <!-- AMZN Chart Container -->
+    <div id="amzn-chart-container" style="width: 50%; float: left;"></div>
+
+    <!-- GOOGL Chart Container -->
+    <div id="googl-chart-container" style="width: 50%; float: left;"></div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Use D3.js to create a chart for AAPL data
+        d3.select("#aapl-chart-container")
+          .append("svg")
+          .attr("width", 400)
+          .attr("height", 200)
+          .style("background-color", "lightgray")
+          .append("text")
+          .attr("x", 200)
+          .attr("y", 100)
+          .text("AAPL Chart ()");
+
+        // Use D3.js to create a chart for META data
+        d3.select("#meta-chart-container")
+          .append("svg")
+          .attr("width", 400)
+          .attr("height", 200)
+          .style("background-color", "lightgray")
+          .append("text")
+          .attr("x", 200)
+          .attr("y", 100)
+          .text("META Chart ()");
+
+        // Use D3.js to create a chart for AMZN data
+        d3.select("#amzn-chart-container")
+          .append("svg")
+          .attr("width", 400)
+          .attr("height", 200)
+          .style("background-color", "lightgray")
+          .append("text")
+          .attr("x", 200)
+          .attr("y", 100)
+          .text("AMZN Chart ()");
+
+        // Use D3.js to create a chart for GOOGL data
+        d3.select("#googl-chart-container")
+          .append("svg")
+          .attr("width", 400)
+          .attr("height", 200)
+          .style("background-color", "lightgray")
+          .append("text")
+          .attr("x", 200)
+          .attr("y", 100)
+          .text("GOOGL Chart ()");
+    </script>
+</body>
+</html>

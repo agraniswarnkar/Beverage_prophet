@@ -1,0 +1,119 @@
+<!-- index.html -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- Link to your CSS file -->
+</head>
+<style>
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+    body {
+            font-family: 'Times New Roman', serif;
+            color: #111010;
+            background-color: #f5d3dfce;
+            font-size: 18px;
+            line-height: 1.3; 
+            margin-top: 0px;
+            margin-bottom: 100px;
+            margin-right: 0px;
+            margin-left: 0px;        
+        }
+
+        h1 {
+            font-size: 2.6em; 
+            line-height: 1px; 
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.6em; 
+            line-height: 3px;
+        }
+        
+        
+        p {
+            color: #110f0dce;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #5c00cc;
+        }
+
+    </style>
+<body>
+    <header>
+        <div class="container">
+            
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'service' %}">Service</a></li>
+                    <li><a href="{% url 'help' %}">Help</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'datapresenting' %}">Data Presenting</a></li>
+                </ul>
+                <h1>Welcome to Our Website</h1>
+
+            
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Hello this is my website</h2>
+            <p>This is a brief description of your website or the services you offer. Keep it engaging!</p>
+            <a href="{% url 'service' %}" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="feature">
+                <h3>Feature 1</h3>
+                <p>Description of Feature 1 goes here.</p>
+            </div>
+            <div class="feature">
+                <h3>Feature 2</h3>
+                <p>Description of Feature 2 goes here.</p>
+            </div>
+            <!-- Add more features as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
